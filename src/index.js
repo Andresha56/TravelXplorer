@@ -3,6 +3,7 @@ import React, { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import App from './App';
 import Theme from './components/theme/Theme';
+import {BrowserRouter} from 'react-router-dom';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -10,7 +11,9 @@ const root = ReactDOM.createRoot(container);
 root.render(
   <StrictMode>
     <ChakraProvider theme={Theme}>
+      <BrowserRouter>
     <App />
+      </BrowserRouter>
     </ChakraProvider>
   </StrictMode>
 );

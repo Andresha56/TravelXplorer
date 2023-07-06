@@ -9,8 +9,8 @@ import {
   Button,
   Text,
   Image,
-  Link,
 } from '@chakra-ui/react';
+import { NavLink } from 'react-router-dom';
 
 export default function Nav() {
   return (
@@ -20,38 +20,38 @@ export default function Nav() {
       h="100vh"
     >
       <figure className="imgCon">
-        <Image src="assets/bg.jpg" />
+        <Image src="assets/bg1.jpg" />
       </figure>
       <Box className="overlay"></Box>
       <Container maxW="1200px" margin="auto" className="headerCon" p="0">
         <Flex as="header" pt="3rem" align="center">
           <Box mr="3rem" fontSize="4xl">
-            <Link color={'white.900'} fontFamily="heading">
+            <NavLink to="./" fontFamily="heading">
               Travelo
-            </Link>
+            </NavLink>
           </Box>
           <Flex as="nav">
             <UnorderedList>
               <ListItem>
-                <Link color={'white.900'}>Home</Link>
+                <NavLink to="/">Home</NavLink>
               </ListItem>
             </UnorderedList>
 
             <UnorderedList>
               <ListItem>
-                <Link color={'white.900'}>About Us</Link>
+                <NavLink to="/about">About Us</NavLink>
               </ListItem>
             </UnorderedList>
 
             <UnorderedList>
               <ListItem>
-                <Link color={'white.900'}>Destination</Link>
+                <NavLink to="/destination">Destination</NavLink>
               </ListItem>
             </UnorderedList>
 
             <UnorderedList>
               <ListItem>
-                <Link color={'white.900'}>Services</Link>
+                <NavLink to="/services">Services</NavLink>
               </ListItem>
             </UnorderedList>
           </Flex>
@@ -66,13 +66,12 @@ export default function Nav() {
           className="banner-content-display"
           direction="column"
           justify="center"
-          mt="-2rem"
+   
         >
-          <Text fontSize="6xl">
-            {' '}
-            It is Better to <br></br>
-            Travel well<br></br>
-            Than to Arrive
+          <Text fontSize="5xl">
+            Plan your Tour <br></br>
+            We will help you <br></br>
+            Make it Great
           </Text>
         </Flex>
       </Container>

@@ -1,0 +1,31 @@
+ 
+
+
+.destination-container
+{
+    img{
+        border-radius: 5px;
+    }
+    padding: 120px 0 ;
+    text-align: center;
+    .p-txt-margin{
+        margin-left:auto;
+            margin-right:auto;
+        }
+        li{
+           list-style:none; 
+        }
+        .grid-txt-con{
+            position: absolute;
+            bottom: 3rem;
+            left: 3rem;
+            z-index: 20
+        }
+        .grid-bg-dark{
+            top: 0;
+            background-color: rgba(0,0 ,0,0.4);
+            
+            border-radius: 5px;
+            }
+} 
+        
